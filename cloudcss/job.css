@@ -19,6 +19,9 @@
 .jb-typ{
     position:relative;
 }
+.jb_typ{
+    display:none;
+}
 
 ul.jb-typ-b{
     background-color:var(--post-clr);
@@ -234,6 +237,7 @@ ul.jb-typ-b{
     .jb_typ{
         padding-bottom:5rem;
         align-items:flex-start;
+        display:flex;
     }
     .jb_typ ul{
         width:500px;
