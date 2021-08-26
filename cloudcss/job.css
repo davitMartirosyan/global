@@ -21,6 +21,8 @@
 }
 .jb_typ{
     display:none;
+    position: relative;
+    z-index: 3;;
 }
 
 ul.jb-typ-b{
