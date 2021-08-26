@@ -247,10 +247,10 @@ ul.jb-typ-b{
     .jb_typ ul li{
         width:18rem;
         height:8rem;
-        padding:1.2rem;
     }
     .jb_typ ul li a{
-        height:5rem;
+        height:8rem;
+        justify-content:flex-start;
     }
     .jb_typ ul li p{
         margin-top:1.2rem;
@@ -258,7 +258,7 @@ ul.jb-typ-b{
     .jb_typ ul li a i{
         font-size:1.8rem;
     }
-    .jb_typ ul li a:hover{
+    .jb_typ ul li:hover > a{
         color:var(--jb-clr);
     }
     .jb_typ ul li:hover{
