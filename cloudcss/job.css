@@ -1,0 +1,264 @@
+@import "style.css";
+.jb .h2{
+    order:1;
+}
+.jb .heroImage{
+    order:2;
+}
+.jb p{
+    padding-bottom:1.5rem;
+    line-height:1.5rem;
+    order:3;
+}
+.jb button{
+    order:4
+}
+.jb .heroImage img{
+    width:60vw;
+}
+.jb-typ{
+    position:relative;
+}
+
+ul.jb-typ-b{
+    background-color:var(--post-clr);
+    border-radius:4px;
+    position:absolute;
+    top:2.5rem;
+    box-shadow: 0px .2rem 0.5rem .2rem rgba(36, 36, 36, 0.671);
+    left:0;
+    right:0;
+    display:none;
+    z-index:5;
+}
+.jb-typ-b.active{
+    display:block;
+}
+.jb-typ-b {
+    padding:0 .8rem;
+}
+.jb-typ-b li:not(:last-child){
+    border-bottom:1px solid;
+}
+.jb-typ-b li a{
+    padding:.8rem;
+}
+.qwerty{
+    position:relatvie;
+}
+.fltr .filter{
+    position:relative;
+    font-size: 1.2rem;
+    transition:.2s;
+    z-index: 8;
+    width:50px;
+    height:50px;
+    padding:.5rem;
+}
+.filter:hover{
+    border-radius:50%;
+    background-color:#efefef;
+    color:#333;
+}
+.fltr__ct_bfr{
+    display:none;
+    position:fixed;
+    background-color:rgba(0, 0, 0, 0.5);
+    width:100%;
+    top:0;
+    left:0;
+    height:100vh;
+    z-index: 1;
+}
+.fltr__ct_bfr.active{
+    display:block;
+}
+
+.fltr__ct{
+    position:absolute;
+    margin:1.2rem 0;
+    left:50%;
+    transform: translateX(-50%);
+    width:90vw;
+    overflow:hidden;
+    z-index: 10;
+    padding: 0 1.2rem 1.2rem 1.2rem;
+    transition:all .2s;
+    opacity:0;
+    visibility:hidden;
+}
+.fltr__ct.active{
+    opacity:1;
+    visibility: visible;
+}
+
+
+.fltr__plg{
+    margin:2rem 0;
+}
+.fltr__plg h4{
+    color:#a5a5a5 !important;
+    text-align: left;
+    margin-bottom:.8rem;
+}
+
+.fltrs_ input[type="checkbox"]{
+    display:none;
+}
+.fltrs_sb{
+    margin:.8rem 0 .8rem 1.8rem;
+}
+.fltrs_ li{
+    margin:.2rem 0;
+}
+.fltr__itm{
+    cursor:pointer;
+}
+
+.fltr__itm p{
+    margin-left:.8rem;
+}
+
+.jb_{
+    background-color:var(--post-clr);
+    border-radius:8px;
+    padding:.5rem 1.2rem;
+    margin: 1.2rem 0;
+}
+.jb_tt{
+    padding-right:1.5rem;
+}
+.jb_dta{
+    padding:1rem 0;
+}
+.jb_dta li{
+    margin:.5rem 0;
+}
+
+
+@media (min-width:768px){
+
+    .jb{
+        position:relative;
+        display:grid;
+        grid-template-columns: 20rem .5fr 1fr;
+        grid-template-rows:5rem 18rem  5rem;
+    }
+    
+    .jb h2{
+        grid-column:1 / 3;
+        grid-row:1/2;
+        position:absolute;
+        top:0;
+        text-align: left;
+    }       
+    .jb .heroImage{
+        grid-column:3 / -1;
+        grid-row:2 / 3;
+    }
+    .jb .heroImage img{
+        width:45vw;
+    }
+    .jb p{
+        grid-column:1 / 3;
+        order:1;
+        grid-row:2 / 3;
+    }
+    .jb button{
+        grid-column:1/2;
+        grid-row:3 / 4;
+        position:absolute;
+        bottom:0;
+    }
+
+
+    .jb_{
+        flex-direction:row !important;
+        align-items:center;
+    }
+    .jb_ttl{
+        flex-direction:column;
+        flex:.5;
+    }
+    .jb_ttl h4{
+        text-align: left;
+        padding-bottom:.2rem;
+    }
+    .jb_ico{
+        width:5rem;
+        margin-bottom:.4rem;
+    }
+
+    .jb_ .jb_dsc{
+        flex:1;
+    }
+    .jb_ .jb_m{
+        flex:.5;
+    }
+
+}
+
+@media (min-width:1368px){
+
+    body{
+        /* background-color:red; */
+    }
+    section.hero{
+        padding-bottom:0;
+    }
+    .jbs__{
+        display:grid;
+        grid-template-columns:20rem 1fr;
+        grid-column-gap:1.2rem;
+    }
+    .jb_{
+        margin:0 0 1.2rem 0;
+    }
+    .qwerty{
+        position:relative;
+        align-self:start;
+    }
+    .fltr{
+        display:none;
+    }
+    .fltr__ct{
+        transform:translate(0);
+        margin:0;
+        visibility: visible;
+        opacity:1;
+        position:relative;
+        left:0;
+        top:0;
+        width:100%;
+    }
+    .jb_typ{
+        padding-bottom:5rem;
+        align-items:flex-start;
+    }
+    .jb_typ ul{
+        width:500px;
+        font-size:1.2rem;
+    }
+
+    .jb_typ ul li{
+        width:18rem;
+        height:8rem;
+        padding:1.2rem;
+    }
+    .jb_typ ul li a{
+        height:5rem;
+    }
+    .jb_typ ul li p{
+        margin-top:1.2rem;
+    }
+    .jb_typ ul li a i{
+        font-size:1.8rem;
+    }
+    .jb_typ ul li a:hover{
+        color:var(--jb-clr);
+    }
+    .jb_typ ul li:hover{
+        border-bottom:1px solid var(--jb-clr);
+    }
+
+}
