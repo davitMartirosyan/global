@@ -18,11 +18,13 @@ const playVideoBtn = document.querySelector(".play");
 const containerNarrow = document.querySelector('.container-narrow');
 playVideoBtn.addEventListener("click",function(){
     containerNarrow.style.display = "flex";
+    document.body.style.overflow = "hidden";
     const link = "https://www.youtube.com/embed/0S5eA4Im4O8";
     containerNarrow.innerHTML = ` <iframe width="1280" height="720" src="${link}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
     containerNarrow.addEventListener("click",(e) =>{
         e.target.style.display = "none";
         e.target.innerHTML = "";
+        document.body.style.overflow = "visible";
     })
 });
 let serviceControl = document.querySelector(".service-control");

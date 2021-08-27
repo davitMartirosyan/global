@@ -963,7 +963,7 @@ ul{
         grid-column:1 / -1;
         grid-template-columns:1fr 1fr;
         position:relative;
-        transition: all cubic-bezier(0.9, -0.18, 0, 1.6) .5s;
+        transition: all cubic-bezier(0.165, 0.84, 0.44, 1) .5s;
     }
 
     .service-ct .service:nth-child(2){
