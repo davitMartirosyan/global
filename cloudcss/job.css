@@ -258,11 +258,23 @@ ul.jb-typ-b{
     .jb_typ ul li a i{
         font-size:1.8rem;
     }
-    .jb_typ ul li:hover > a{
+    .jb_typ ul li a._jb_:hover{
         color:var(--jb-clr);
-    }
-    .jb_typ ul li:hover{
         border-bottom:1px solid var(--jb-clr);
     }
+    .jb_typ ul li a._jb_.active{
+        color:var(--jb-clr);
+        border-bottom:1px solid var(--jb-clr);
+    }
+
+    .jb_typ ul li a._fl_:hover{
+        color:var(--fl-clr);
+        border-bottom:1px solid var(--fl-clr);
+    }
+    .jb_typ ul li a._fl_.active{
+        color:var(--fl-clr);
+        border-bottom:1px solid var(--fl-clr);
+    }
+
 
 }

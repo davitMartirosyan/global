@@ -11,3 +11,20 @@ filterBtn.addEventListener("click",function(){
     fltr__ct.classList.toggle("active");
     fltr__ct_bfr.classList.toggle("active");
 });
+const jbType = document.querySelector(".jb__typ");
+const types = jbType.querySelectorAll("li a[data-role]");
+const sbl = Array.prototype.slice.call(types);
+
+types.forEach(type => {
+    type.addEventListener("click", function(e){
+        e.preventDefault();
+        type.classList.add("active");
+        for(let i=0; i<sbl.length; i++){
+            if(sbl[i] !== type && sbl[i].classList.contains("active")){
+                sbl[i].classList.remove("active");
+                console.log(sbl[i])
+            }
+        }
+        
+    })
+})
