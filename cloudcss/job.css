@@ -1,19 +1,19 @@
 @import "style.css";
-.jb .h2{
+.hro__sctn .h2{
     order:1;
 }
-.jb .heroImage{
+.heroImage{
     order:2;
 }
-.jb p{
+.hro__sctn p{
     padding-bottom:1.5rem;
     line-height:1.5rem;
     order:3;
 }
-.jb button{
+.hro__sctn button{
     order:4
 }
-.jb .heroImage img{
+.heroImage img{
     width:60vw;
 }
 .jb-typ{
@@ -192,33 +192,33 @@ ul.jb-typ-b{
 
 @media (min-width:768px){
 
-    .jb{
+    .hro__sctn{
         position:relative;
         display:grid;
         grid-template-columns: 20rem .5fr 1fr;
         grid-template-rows:5rem 18rem  5rem;
     }
     
-    .jb h2{
+    .hro__sctn h2{
         grid-column:1 / 3;
         grid-row:1/2;
         position:absolute;
         top:0;
         text-align: left;
     }       
-    .jb .heroImage{
+    .heroImage{
         grid-column:3 / -1;
         grid-row:2 / 3;
     }
-    .jb .heroImage img{
-        width:45vw;
+    .heroImage img{
+        width:45vw !important;
     }
-    .jb p{
+    .hro__sctn p{
         grid-column:1 / 3;
         order:1;
         grid-row:2 / 3;
     }
-    .jb button{
+    .hro__sctn button{
         grid-column:1/2;
         grid-row:3 / 4;
         position:absolute;
