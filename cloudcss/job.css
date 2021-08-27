@@ -25,6 +25,40 @@
     z-index: 3;;
 }
 
+/*/////*/
+.jbs__, .flc__{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-column-gap:1.2rem;
+}
+.jb__fl__ct{
+    display:none;
+}
+.jb__fl__ct.active{
+    display:grid;
+}
+.jb_typ ul li a._jb_.active{
+    color:var(--jb-clr);
+    border-bottom:1px solid var(--jb-clr);
+}
+
+.jb_typ ul li a._fl_.active{
+    color:var(--fl-clr);
+    border-bottom:1px solid var(--fl-clr);
+}
+
+
+.jb_typ ul li a._jb_:hover{
+    color:var(--jb-clr);
+    border-bottom:1px solid var(--jb-clr);
+}
+.jb_typ ul li a._fl_:hover{
+    color:var(--fl-clr);
+    border-bottom:1px solid var(--fl-clr);
+}
+/*/////*/
+
+
 ul.jb-typ-b{
     background-color:var(--post-clr);
     border-radius:4px;
@@ -126,9 +160,16 @@ ul.jb-typ-b{
 
 .jb_{
     background-color:var(--post-clr);
-    border-radius:8px;
-    padding:.5rem 1.2rem;
     margin: 1.2rem 0;
+    border-radius:8px;
+    overflow:hidden;
+}
+.jb_ > a{
+    padding:.5rem 1.2rem;
+}
+.jb_ > a:hover{
+    background-color:#8D8B8B;
+    ;
 }
 .jb_tt{
     padding-right:1.5rem;
@@ -209,13 +250,15 @@ ul.jb-typ-b{
     section.hero{
         padding-bottom:0;
     }
-    .jbs__{
-        display:grid;
+    .jbs__, .flc__{
         grid-template-columns:20rem 1fr;
         grid-column-gap:1.2rem;
     }
     .jb_{
         margin:0 0 1.2rem 0;
+    }
+    .jb_ttl .jb_ico{
+        margin-right:1.3rem;
     }
     .qwerty{
         position:relative;
@@ -258,23 +301,19 @@ ul.jb-typ-b{
     .jb_typ ul li a i{
         font-size:1.8rem;
     }
-    .jb_typ ul li a._jb_:hover{
-        color:var(--jb-clr);
-        border-bottom:1px solid var(--jb-clr);
-    }
-    .jb_typ ul li a._jb_.active{
-        color:var(--jb-clr);
-        border-bottom:1px solid var(--jb-clr);
-    }
 
-    .jb_typ ul li a._fl_:hover{
-        color:var(--fl-clr);
-        border-bottom:1px solid var(--fl-clr);
-    }
-    .jb_typ ul li a._fl_.active{
-        color:var(--fl-clr);
-        border-bottom:1px solid var(--fl-clr);
-    }
+    
+}
 
-
+@media (min-width:1920px){
+    .jb_ttl{
+        flex-direction:row;
+        justify-content: flex-start !important;
+    }
+    .jb_tt{
+        justify-content: center !important;
+    }
+    .jb_dsc{
+        align-items: center !important;
+    }
 }
