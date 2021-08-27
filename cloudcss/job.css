@@ -158,13 +158,21 @@ ul.jb-typ-b{
     margin-left:.8rem;
 }
 
-.jb_{
+.jbs__ .jb_{
+    background-color:var(--post-clr);
+    margin: 1.2rem 0;
+    border-radius:8px;
+    overflow:hidden;
+    padding:.5rem 1.2rem;
+}
+
+.flc__ .jb_{
     background-color:var(--post-clr);
     margin: 1.2rem 0;
     border-radius:8px;
     overflow:hidden;
 }
-.jb_ > a{
+.flc__ .jb_ > a{
     padding:.5rem 1.2rem;
 }
 .jb_ > a:hover{
@@ -255,7 +263,7 @@ ul.jb-typ-b{
         grid-column-gap:1.2rem;
     }
     .jb_{
-        margin:0 0 1.2rem 0;
+        margin:0 0 1.2rem 0 !important;
     }
     .jb_ttl .jb_ico{
         margin-right:1.3rem;
